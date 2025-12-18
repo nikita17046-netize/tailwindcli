@@ -1,13 +1,530 @@
+
+
+<!-- 
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./output.css" >
+  <title>BrightLibrary Management System</title>
+  <link rel="stylesheet" href="./output.css">
 </head>
-<body>
-  <h1 class="text-3xl">
-    Hello world!
-  </h1>
+
+<body class="bg-gradient-to-br from-cyan-50 to-sky-100 text-gray-800">
+
+
+  <div class="bg-sky-700 text-white text-sm">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex justify-between">
+      <span>📍 Central Bright Library</span>
+      <span>⏰ Mon – Sat: 8:00 AM – 8:00 PM</span>
+    </div>
+  </div>
+
+
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold text-cyan-700">BrightLibrary</h1>
+
+      <nav class="space-x-6 font-medium text-gray-700">
+        <a href="#overview" class="hover:text-cyan-600">Overview</a>
+        <a href="#features" class="hover:text-cyan-600">Features</a>
+        <a href="#modules" class="hover:text-cyan-600">Modules</a>
+        <a href="#steps" class="hover:text-cyan-600">How it Works</a>
+        <a href="#testimonials" class="hover:text-cyan-600">Testimonials</a>
+        <a href="#contact" class="hover:text-cyan-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section id="overview" class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-14 items-center">
+
+    <div>
+      <h2 class="text-5xl font-extrabold leading-tight mb-6">
+        Modern <span class="text-cyan-700">Library Management</span> System
+      </h2>
+      <p class="text-lg text-gray-600 mb-8">
+        BrightLibrary is a vibrant, intelligent platform that helps manage books, members,
+        circulation, digital resources, and reporting efficiently.
+      </p>
+
+      <ul class="grid grid-cols-2 gap-4 mb-8 text-gray-700">
+        <li>✔ Live Book Availability</li>
+        <li>✔ Digital Member Records</li>
+        <li>✔ Automatic Fine Calculation</li>
+        <li>✔ Usage Analytics & Reports</li>
+        <li>✔ Secure Login & Role-based Access</li>
+        <li>✔ Notifications & Alerts</li>
+      </ul>
+
+      <div class="flex gap-4">
+        <button class="bg-cyan-700 text-white px-6 py-3 rounded-lg hover:bg-cyan-800 transition">
+          Admin Login
+        </button>
+        <button class="border border-cyan-700 text-cyan-700 px-6 py-3 rounded-lg hover:bg-cyan-50 transition">
+          Explore Catalog
+        </button>
+      </div>
+    </div>
+
+   
+    <div class="flex justify-center">
+      <img 
+        src="https://illustrations.popsy.co/cyan/library-reading.svg"
+        alt="Library Illustration"
+        class="max-w-md">
+    </div>
+
+  </section>
+
+
+  <section id="features" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-16">
+        Key Features
+      </h3>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <div class="border rounded-xl p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">📚 Smart Catalog</h4>
+          <p class="text-gray-600">
+            Browse books, journals, e-books, research papers with advanced
+            search, filters, categories, and author indexing.
+          </p>
+        </div>
+
+        <div class="border rounded-xl p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">👥 Member Management</h4>
+          <p class="text-gray-600">
+            Register and manage students, staff, and external members.
+            Track borrowing, fines, reservations, and renewal history.
+          </p>
+        </div>
+
+        <div class="border rounded-xl p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">🔄 Circulation Control</h4>
+          <p class="text-gray-600">
+            Efficient issue, return, renewal, reservation, and overdue management
+            with automated notifications and alerts.
+          </p>
+        </div>
+
+        <div class="border rounded-xl p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">📊 Reports & Analytics</h4>
+          <p class="text-gray-600">
+            Generate real-time reports: books issued, members active,
+            overdue items, and inventory performance analytics.
+          </p>
+        </div>
+
+        <div class="border rounded-xl p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">🔐 Secure Access</h4>
+          <p class="text-gray-600">
+            Role-based login for Admins, Librarians, and Members ensures
+            secure and controlled access.
+          </p>
+        </div>
+
+        <div class="border rounded-xl p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">📲 Notifications & Alerts</h4>
+          <p class="text-gray-600">
+            Automated reminders for due dates, fines, reservations, and system updates.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="steps" class="py-20 bg-cyan-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-16">
+        How BrightLibrary Works
+      </h3>
+
+      <div class="grid md:grid-cols-3 gap-12 text-center">
+
+        <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">1. Add Resources</h4>
+          <p class="text-gray-700">
+            Librarians upload new books, journals, and e-resources into
+            the system with metadata and category tagging.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">2. Manage Members</h4>
+          <p class="text-gray-700">
+            Register students, staff, and external members with borrowing
+            privileges, access control, and renewal policies.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">3. Issue & Track</h4>
+          <p class="text-gray-700">
+            Issue, return, and reserve resources. Track overdue items
+            and send automated reminders.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-center">
+
+      <div>
+        <h3 class="text-4xl font-bold text-cyan-700">25K+</h3>
+        <p class="mt-2 text-gray-700">Books Available</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl font-bold text-cyan-700">7K+</h3>
+        <p class="mt-2 text-gray-700">Active Members</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl font-bold text-cyan-700">120+</h3>
+        <p class="mt-2 text-gray-700">Staff & Librarians</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl font-bold text-cyan-700">24/7</h3>
+        <p class="mt-2 text-gray-700">Digital Access</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="testimonials" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-16">What Our Users Say</h3>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <div class="p-6 rounded-xl shadow hover:shadow-lg transition bg-cyan-50 text-gray-700">
+          <p>"BrightLibrary has revolutionized the way we manage our university library.
+             Finding books and tracking members has never been easier."</p>
+          <h5 class="mt-4 font-semibold">— Prof. R. Sharma</h5>
+        </div>
+
+        <div class="p-6 rounded-xl shadow hover:shadow-lg transition bg-cyan-50 text-gray-700">
+          <p>"The system is intuitive and fast. Students love the digital catalog
+             and real-time notifications for due dates."</p>
+          <h5 class="mt-4 font-semibold">— Librarian M. Patel</h5>
+        </div>
+
+        <div class="p-6 rounded-xl shadow hover:shadow-lg transition bg-cyan-50 text-gray-700">
+          <p>"Reports and analytics help us optimize resources and improve member
+             engagement. Truly a professional library management solution."</p>
+          <h5 class="mt-4 font-semibold">— Admin S. Verma</h5>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer id="contact" class="bg-slate-800 text-slate-300">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8 text-sm">
+
+      <div>
+        <h4 class="text-white font-semibold mb-3">BrightLibrary</h4>
+        <p>
+          Innovative, fast, and user-friendly library management platform
+          for institutions, colleges, and research centers.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+        <ul class="space-y-2">
+          <li>Catalog</li>
+          <li>Members</li>
+          <li>Admin Panel</li>
+          <li>Reports</li>
+          <li>Support</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold mb-3">Contact</h4>
+        <p>Email: support@brightlibrary.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Central Library Campus</p>
+      </div>
+
+    </div>
+
+    <div class="text-center py-4 border-t border-slate-700 text-xs">
+      © 2025 BrightLibrary | Modern Library Management Platform
+    </div>
+  </footer>
+
+</body>
+</html>
+ -->
+
+
+
+
+
+
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightLibrary 360</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-gradient-to-br from-cyan-50 to-sky-100 text-gray-800">
+
+  <!-- Top Info Bar -->
+  <div class="bg-cyan-700 text-white text-sm">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex justify-between">
+      <span>📍 BrightLibrary Virtual Hub</span>
+      <span>⏰ Mon – Sat: 8:00 AM – 8:00 PM</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold text-cyan-700">BrightLibrary 360</h1>
+      <nav class="space-x-6 font-medium text-gray-700">
+        <a href="#overview" class="hover:text-cyan-600">Overview</a>
+        <a href="#features" class="hover:text-cyan-600">Features</a>
+        <a href="#modules" class="hover:text-cyan-600">Modules</a>
+        <a href="#tour" class="hover:text-cyan-600">Virtual Tour</a>
+        <a href="#testimonials" class="hover:text-cyan-600">Testimonials</a>
+        <a href="#contact" class="hover:text-cyan-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Illustration -->
+  <section id="overview" class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-14 items-center">
+
+    <div>
+      <h2 class="text-5xl font-extrabold leading-tight mb-6">
+        Explore <span class="text-cyan-700">Next-Gen Library Management</span>
+      </h2>
+      <p class="text-lg text-gray-600 mb-8">
+        BrightLibrary 360 brings your library into the future — manage
+        books, digital resources, members, circulation, and analytics
+        all in one immersive platform.
+      </p>
+
+      <ul class="grid grid-cols-2 gap-4 mb-8 text-gray-700">
+        <li>✔ AI-powered search</li>
+        <li>✔ Interactive digital catalog</li>
+        <li>✔ Automated reminders & fines</li>
+        <li>✔ Real-time analytics</li>
+        <li>✔ Virtual library tour</li>
+        <li>✔ Role-based secure access</li>
+      </ul>
+
+      <div class="flex gap-4">
+        <button class="bg-cyan-700 text-white px-6 py-3 rounded-lg hover:bg-cyan-800 transition">
+          Admin Login
+        </button>
+        <button class="border border-cyan-700 text-cyan-700 px-6 py-3 rounded-lg hover:bg-cyan-50 transition">
+          Explore Catalog
+        </button>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <img src="https://illustrations.popsy.co/cyan/library-reading.svg" alt="Library Illustration" class="max-w-md animate-bounce">
+    </div>
+
+  </section>
+
+  <!-- Features / Imagination Section -->
+  <section id="features" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-16">
+        Why BrightLibrary 360?
+      </h3>
+
+      <div class="grid md:grid-cols-4 gap-10">
+
+        <div class="border rounded-xl p-6 hover:shadow-lg transition text-center">
+          <h4 class="text-xl font-semibold mb-3">📚 AI Catalog</h4>
+          <p class="text-gray-600">
+            Find resources faster with AI-powered search, auto suggestions,
+            and smart recommendations.
+          </p>
+        </div>
+
+        <div class="border rounded-xl p-6 hover:shadow-lg transition text-center">
+          <h4 class="text-xl font-semibold mb-3">👥 Member Portal</h4>
+          <p class="text-gray-600">
+            Digital member profiles with borrowing history, preferences,
+            and notifications.
+          </p>
+        </div>
+
+        <div class="border rounded-xl p-6 hover:shadow-lg transition text-center">
+          <h4 class="text-xl font-semibold mb-3">🌐 Virtual Tour</h4>
+          <p class="text-gray-600">
+            Explore the library online with immersive 360° virtual tours
+            and interactive floor maps.
+          </p>
+        </div>
+
+        <div class="border rounded-xl p-6 hover:shadow-lg transition text-center">
+          <h4 class="text-xl font-semibold mb-3">📊 Analytics & Reports</h4>
+          <p class="text-gray-600">
+            Track borrowing trends, popular resources, and library usage
+            with intuitive dashboards.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works / Steps -->
+  <section id="modules" class="py-20 bg-cyan-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-16">How It Works</h3>
+
+      <div class="grid md:grid-cols-3 gap-12 text-center">
+
+        <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">1. Add Resources</h4>
+          <p class="text-gray-700">
+            Upload books, journals, e-books with metadata, categories, and tags.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">2. Manage Members</h4>
+          <p class="text-gray-700">
+            Register students, staff, and external members, manage roles, and privileges.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3">3. Issue & Track</h4>
+          <p class="text-gray-700">
+            Issue, return, reserve, and monitor overdue items with automated reminders.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Virtual Tour Section -->
+  <section id="tour" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-12">Virtual Library Tour</h3>
+      <p class="text-gray-700 mb-8">Take a digital walkthrough of our library, browse sections, and explore collections from anywhere.</p>
+      <img src="https://illustrations.popsy.co/cyan/online-learning.svg" alt="Virtual Tour" class="mx-auto max-w-lg rounded-lg shadow-lg hover:scale-105 transition transform">
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="bg-cyan-50 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-16">Testimonials</h3>
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition">
+          <p>"BrightLibrary 360 made managing our university library intuitive and fun.
+             Students love the virtual catalog!"</p>
+          <h5 class="mt-4 font-semibold">— Prof. R. Sharma</h5>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition">
+          <p>"The analytics dashboards help us optimize book circulation
+             and improve resource allocation."</p>
+          <h5 class="mt-4 font-semibold">— Librarian M. Patel</h5>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition">
+          <p>"Virtual tour feature is amazing! Students can explore sections
+             and plan visits before arriving."</p>
+          <h5 class="mt-4 font-semibold">— Admin S. Verma</h5>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-center">
+
+      <div>
+        <h3 class="text-4xl font-bold text-cyan-700">30K+</h3>
+        <p class="mt-2 text-gray-700">Books & Resources</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl font-bold text-cyan-700">10K+</h3>
+        <p class="mt-2 text-gray-700">Active Members</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl font-bold text-cyan-700">150+</h3>
+        <p class="mt-2 text-gray-700">Staff & Librarians</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl font-bold text-cyan-700">24/7</h3>
+        <p class="mt-2 text-gray-700">Digital Access</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-slate-800 text-slate-300">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8 text-sm">
+
+      <div>
+        <h4 class="text-white font-semibold mb-3">BrightLibrary 360</h4>
+        <p>
+          Innovative, immersive library management platform
+          for colleges, universities, and research centers.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+        <ul class="space-y-2">
+          <li>Catalog</li>
+          <li>Members</li>
+          <li>Admin Panel</li>
+          <li>Reports</li>
+          <li>Virtual Tour</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold mb-3">Contact</h4>
+        <p>Email: support@brightlibrary360.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Central Library Campus</p>
+      </div>
+
+    </div>
+
+    <div class="text-center py-4 border-t border-slate-700 text-xs">
+      © 2025 BrightLibrary 360 | Futuristic Library Management
+    </div>
+  </footer>
+
 </body>
 </html>
